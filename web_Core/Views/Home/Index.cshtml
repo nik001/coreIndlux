@@ -1,0 +1,17 @@
+﻿@model IEnumerable<web_Core.Models.Computer>
+@{
+    ViewBag.Title = "IT -Influx";
+}
+<h3>Список моделей</h3>
+<div id="modDialog" class="modal fade">
+    <div id="dialogContent" class="modal-dialog"></div>
+</div>
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>
+            @Html.ActionLink(c.Name, "Details",
+            new { id = c.Id }, new { @class = "compItem" })
+        </li>
+        }
+</ul>
