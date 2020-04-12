@@ -106,5 +106,6 @@ C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\ru\Mi
 C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
 C:\Users\User\Desktop\проекты\Core\web_Core\obj\Debug\netcoreapp3.1\web_Core.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\проекты\Core\web_Core\obj\Debug\netcoreapp3.1\web_Core.MvcApplicationPartsAssemblyInfo.cache
