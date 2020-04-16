@@ -24,13 +24,9 @@ namespace web_Core.Controllers
             return View(comps);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details()
         {
-            Computer c = comps.FirstOrDefault(com => com.Id == id);
-            if (c != null)
-            {
-                return PartialView(c);
-            }
+           
             return View();
         }
 
