@@ -1,44 +1,53 @@
 ﻿@model IEnumerable<web_Core.Models.Computer>
 @{
-    ViewBag.Title = "IT -Influx";
+    ViewBag.Title = "Компьютеры";
 }
-<!--
-<h3>Список моделей</h3>
+
 <div id="modDialog" class="modal fade">
     <div id="dialogContent" class="modal-dialog"></div>
 </div>
-<div class="bg-gradient-danger">
-<ul>
-    @foreach (var c in Model)
-    {
-        <li>
-            @Html.ActionLink(c.Name, "Details",
-            new { id = c.Id }, new { @class = "compItem" })
-        </li>
-     }
-</ul>
-    </div>
--->
+@section scripts
+{
+    <script type="text/javascript">
 
-    <div class="row pt-3">
-        <div class="col-5">
-            <div class="div pt-3 text-info">
-                <h1>
-                    Профессиональный </br>
-                    it-Аутсорсинг
-                </h1>
-            </div>
-            <div class="div  text-white pt-4">
-                Наша основная цель - долгосрочное, доверительное отрудничество.
-                Мы тщательно относимся к потребностям клиента
-                и выбираем подходящие решения
-                под цели обслуживаемого бизнеса
-            </div>
-            <div class="row pt-5">
-                <div class="col-6"><button type="button" class="btn btn-outline-warning">Заключить договор  </button></div>
-                <div class="col-6"><button type="button" class="btn btn-outline-warning">задать вопрос      </button></div>
-            </div>
+        $(function () {
+            $.ajaxSetup({ cache: false });
+            $(".compItem").click(function (e) {
+
+                e.preventDefault();
+                $.get(this.href, function (data) {
+                    $('#dialogContent').html(data);
+                    $('#modDialog').modal('show');
+                });
+            });
+        })
+    </script>
+}
+
+
+<div class="row pt-3">
+    <div class="col-5">
+        <div class="div pt-3 text-info">
+            <h1>
+                Профессиональный </br>
+                it-Аутсорсинг
+            </h1>
         </div>
-        <div class="col-7 "> <img src="~/images/banner.png" height="400px" class="rounded float-right" /></div>
+        <div class="div  text-white pt-4">
+            Наша основная цель - долгосрочное, доверительное отрудничество.
+            Мы тщательно относимся к потребностям клиента
+            и выбираем подходящие решения
+            под цели обслуживаемого бизнеса
+        </div>
+        <div class="row pt-5">
+            <div class="col-6"><button type="button" class="btn btn-outline-warning">Заключить договор  </button></div>
+            <div class="col-6"><button type="button" class="btn btn-outline-warning">задать вопрос      </button></div>
+        </div>
+    </div>
+    <div class="col-7 "> <img src="~/images/banner.png" height="400px" class="rounded float-right" /></div>
 
-    </div>30
+</div>
+
+
+
+

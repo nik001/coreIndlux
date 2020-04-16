@@ -109,3 +109,4 @@ C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\zh-Ha
 C:\Users\User\Desktop\проекты\Core\web_Core\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
 C:\Users\User\Desktop\проекты\Core\web_Core\obj\Debug\netcoreapp3.1\web_Core.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\проекты\Core\web_Core\obj\Debug\netcoreapp3.1\web_Core.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\проекты\Core\web_Core\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs

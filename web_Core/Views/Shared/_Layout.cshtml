@@ -20,14 +20,14 @@
                 </div>
                 <div class="col-9 d-flex justify-content-end pr-0">
                     <nav class="navbar navbar-expand-lg navbar-dark justify-content-end pr-0">
-                        <ul class="nav navbar-nav navbar-menu-center menu pr-0">          
+                        <ul class="nav navbar-nav navbar-menu-center menu pr-0">
                             <li class="nav-item"> <a class="nav-link text-warning" href="#">Заказать Звонок     </a> </li>
-                            <li class="nav-item"> <a class="nav-link text-info"    href="#"> HELPDESK           </a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white"   href="#"> Компания           </a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white"   href="#"> Блог               </a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white"   href="#"> Услуги             <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white"   href="#"> Контакты           </a> </li>
-                            <li class="nav-item"> <a class="nav-link text-warning" href="#"> Войти              </a> </li>
+                            <li class="nav-item"> <a class="nav-link text-info" href="#"> HELPDESK           </a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="#"> Компания           </a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="#"> Блог               </a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="#"> Услуги             <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="#"> Контакты           </a> </li>
+                            <li class="nav-item"> @Html.ActionLink(" Войти", "Details", new { id = 1 }, new { @class = "compItem" })   </li>
                         </ul>
                     </nav>
                 </div>
@@ -51,5 +51,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+
 </body>
 </html>
